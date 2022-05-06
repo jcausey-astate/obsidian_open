@@ -6,16 +6,15 @@
 
 function usage(){
     echo "Usage:"
-    echo "$(basename $0) vault/file.md"
-    echo "    opens 'file.md' in 'vault'."
-    echo "  or  "
-    echo "$(basename $0) vault"
-    echo "    opens 'vault'."
-    echo "  or  "
-    echo "$(basename $0) file.md"
-    echo "    opens 'file.md' in current vault, if it exists.  (Error if the file doesn't exist.)."
-    echo
-    echo " Use the -n option to create a new file, if the file doesn't exist."
+    echo "    $(basename $0) [-n] vault/file.md"
+    echo "        opens 'file.md' in 'vault'."
+    echo "    $(basename $0) [-n] vault"
+    echo "        opens 'vault'."
+    echo "    $(basename $0) [-n] file.md"
+    echo "        opens 'file.md' in current vault, if it exists."
+    echo "Options:"
+    echo "    -h Show this help text."
+    echo "    -n Creates a new file, instead of opening an existing one."
     echo
 }
 
